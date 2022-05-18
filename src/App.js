@@ -13,6 +13,8 @@ function App() {
     'region': 'eu-west-1',
     'credentials': {
       'accessKeyId': 'ACCESSKEYID', 'secretAccessKey': 'SECRETACCESSKEY'
+      //              ↑↑↑↑↑↑↑↑↑↑↑                       ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
+      //              replace with the ones in .csv file
     }
   }
 
@@ -22,7 +24,14 @@ function App() {
 
   // basic query to get data from the db
 
-  const query1 = 'select * from "CF_Demo_DataBase"."myTestDemo" limit 2';
+  const query1 = 'select * from "CF_Demo_DataBase"."myTestDemo_houlysummary" limit 2';
+  
+  // NOTE:
+  // There is 3 tables in the database, 'CF_Demo_DataBase', which are:
+  //    myTestDemo_daily_summary
+  //    myTestDemo_hourly_summary
+  //    myTestDemo
+  // As the names suggest, these are the records of raw data, hourly, and daily summaries.
 
   // main function to retrieve data 
   // NOTE: becasue the response will return the nextToken, the function need to be called multiple times to get all data rows until the nextToken is null.
