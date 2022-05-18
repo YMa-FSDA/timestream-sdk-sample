@@ -24,7 +24,7 @@ function App() {
 
   // basic query to get data from the db
 
-  const query1 = 'select * from "CF_Demo_DataBase"."myTestDemo_houlysummary" limit 2';
+  const query1 = 'select * from "CF_Demo_DataBase"."myTestDemo_hourly_summary" limit 2';
   
   // NOTE:
   // There is 3 tables in the database, 'CF_Demo_DataBase', which are:
