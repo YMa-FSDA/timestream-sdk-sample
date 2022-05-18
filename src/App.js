@@ -62,10 +62,13 @@ function App() {
   getAllRows(query1);
 
   return (
-    <>
-      Check the response from the server in the console. Basically, the response comprises of ColumnInfo and Rows which requires
-      postprocess to clean up the data.
-    </>
+    <div className='App-header'>
+      <p style={{'width':'500px'}}>
+        Check the response from the server in the console. Basically, the response comprises of ColumnInfo and Rows which requires
+        post process to clean up the data.
+      </p>
+
+    </div>
   );
 }
 
